@@ -8,15 +8,15 @@
          <div class="apartment-title">
             <h1>{{$apartment->title}}</h1>
          </div>
-            
+
          <div class="apartment-price">
             <h5 class="apartment-price-label">Prezzo per notte: <span class="badge">€{{$apartment->price}}</span></h5>
             <a href="{{route('registered.apartments.edit', $apartment->id)}}" class="edit-icon"><i class="fas fa-edit fa-2x" title="Modifica appartamento"></i>Modifica l'appartamento</a>
          </div>
       </div>
-      
-      
-      
+
+
+
       <img src="{{asset($apartment->featured_image)}}" title="Immagine in evidenza">
       <h5 class="apartment-desc-title">Descrizione</h5>
       <p class="apartment-desc-text">{{$apartment->description}}</p>
@@ -30,11 +30,11 @@
             </div>
             <div class="details-item">
                <i class="fas fa-bed icon"></i>
-               <p class="lead"><span>{{$apartment->rooms_number}}</span> posti letto</p>
+               <p class="lead"><span>{{$apartment->beds_number}}</span> posti letto</p>
             </div>
             <div class="details-item">
                <i class="fas fa-bath icon"></i>
-               <p class="lead"><span>{{$apartment->rooms_number}}</span> bagni</p>
+               <p class="lead"><span>{{$apartment->bathrooms_number}}</span> bagni</p>
             </div>
          </div>
 
@@ -81,10 +81,10 @@
          <div class="sidebar-message">
             <h6 class="message-title"><i class="fas fa-envelope icon"></i> Contatta il proprietario</h6>
             <form action="{{route('message.store', $apartment)}}" method="POST">
-               @csrf 
+               @csrf
                @method('POST') --}}
                {{-- <!-- <input type="hidden" name="apartment_id" value="{{$apartment->id}}"> --> --}}
-               
+
                <!-- Form-group -->
                {{-- <div class="form-group">
                   <label for="email">Email</label>
