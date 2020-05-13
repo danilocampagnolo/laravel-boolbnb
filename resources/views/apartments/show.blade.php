@@ -31,11 +31,11 @@
             </div>
             <div class="details-item">
                <i class="fas fa-bed icon"></i>
-               <p class="lead"><span>{{$apartment->rooms_number}}</span> posti letto</p>
+               <p class="lead"><span>{{$apartment->beds_number}}</span> posti letto</p>
             </div>
             <div class="details-item">
                <i class="fas fa-bath icon"></i>
-               <p class="lead"><span>{{$apartment->rooms_number}}</span> bagni</p>
+               <p class="lead"><span>{{$apartment->bathrooms_number}}</span> bagni</p>
             </div>
          </div>
 
@@ -83,7 +83,7 @@
             <h6 class="message-title"><i class="fas fa-envelope icon"></i> Contatta il proprietario</h6>
             <form action="{{route('message.store', $apartment)}}" method="POST">
                @csrf
-               @method('POST')               
+               @method('POST')
                <!-- Form-group -->
                <div class="form-group">
                   <label for="email">Email</label>
