@@ -17,6 +17,10 @@
       &:active{
         transform: scale(1);
       }
+      &-img-top{
+        height: 200px;
+        object-fit: cover;
+      }
       margin-bottom: 32px;
       transition: 0.2s;
       .card-body{
