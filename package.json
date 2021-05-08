@@ -27,7 +27,7 @@
         "@tomtom-international/web-sdk-services": "^5.53.0",
         "bootstrap": "^4.4.1",
         "chart.js": "^2.9.3",
-        "handlebars": "^4.7.6",
+        "handlebars": "^4.7.7",
         "query": "^0.2.0"
     }
 }
